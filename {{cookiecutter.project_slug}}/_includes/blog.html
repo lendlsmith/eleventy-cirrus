@@ -1,0 +1,41 @@
+{% raw %}<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% for site_name in site.site_name -%}{{ site_name }}{% endfor -%} | Blog</title>
+
+    {% include utils/facebook_opengraph.html %}
+    {% include utils/google_analytics.html %}
+    {% include utils/favicon.html %}
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/cirrus-ui@0.6.0/dist/cirrus.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css" rel="stylesheet">
+    <link href="/assets/dist/css/app.css" rel="stylesheet" >
+  </head>
+  <body class="{{ body_class }}">
+
+    {% include base/navigation.html %}
+
+    <div id="content" class="row">
+      <div id="blog_post" class="col-9 offset-center">
+        {% include utils/social_media.html %}
+        {{ content }}
+      </div>
+    </div>
+
+    {% include base/footer.html %}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+    <script>
+	    new Splide( '.splide' ).mount();
+    </script>
+  </body>
+</html>{% endraw %}

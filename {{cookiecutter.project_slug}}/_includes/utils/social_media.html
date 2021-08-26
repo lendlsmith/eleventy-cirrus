@@ -1,0 +1,39 @@
+{% raw %}<div class="rounded-social-buttons hide-for-print">
+  <a style="color: #777; font-size: 13px; margin-right: 5px;">Share to</a>
+  <a class="social-button facebook" target="_blank">
+  	<i class="fab fa-facebook-f"></i>
+  </a>
+  <a class="social-button twitter" target="_blank">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a class="social-button whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a class="social-button linkedin" target="_blank">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+  <a class="social-button mail" target="_blank">
+    <i class="fa fa-envelope"></i>
+  </a>
+</div>
+
+<script>
+	document.querySelector('.rounded-social-buttons a.social-button.facebook').href = "https://www.facebook.com/sharer.php?u={% for site_url in site.site_url -%}{{ site_url }}{% endfor -%}" + window.location.pathname;
+</script>
+
+<script>
+	document.querySelector('.rounded-social-buttons a.social-button.twitter').href = "https://twitter.com/share?url={% for site_url in site.site_url -%}{{ site_url }}{% endfor -%}" + window.location.pathname;
+</script>
+
+<script>
+	document.querySelector('.rounded-social-buttons a.social-button.whatsapp').href = "whatsapp://send?text={% for site_url in site.site_url -%}{{ site_url }}{% endfor -%}" + window.location.pathname;
+</script>
+
+<script>
+	document.querySelector('.rounded-social-buttons a.social-button.linkedin').href = "http://www.linkedin.com/shareArticle?mini=true&amp;url={% for site_url in site.site_url -%}{{ site_url }}{% endfor -%}" + window.location.pathname;
+</script>
+
+<script>
+	document.querySelector('.rounded-social-buttons a.social-button.mail').href = "mailto:?subject={{ title }}&body={% for site_url in site.site_url -%}{{ site_url }}{% endfor -%}" + window.location.pathname;
+</script>
+{% endraw %}

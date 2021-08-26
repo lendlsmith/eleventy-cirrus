@@ -1,0 +1,5 @@
+{
+    "project_name": "Static Project",
+    "project_slug": "{{ cookiecutter.project_name|replace(' ', '_')|lower }}",
+    "host_name" : "static.chrisdev.com"
+}

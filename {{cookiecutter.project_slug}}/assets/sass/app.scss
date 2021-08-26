@@ -1,0 +1,40 @@
+@charset 'utf-8';
+@import 'base';
+
+.header {
+  background: $primary;
+  a {color: $white;}
+}
+
+body.home {
+  background: url('../../img/bg.jpg') 100% no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#slider {
+  h1, h6 {color: $white;}
+  h6 {font-weight: 300; margin-bottom: 30px;}
+  .splide__pagination {display: none;}
+}
+
+#welcome {
+  h2, p {color: $white;}
+}
+
+#grid {
+  i {
+    margin-bottom: 15px;
+    color: $primary;
+  }
+  p {}
+}
+
+footer {
+  background: $dark-metal;
+  p {
+    color: $white;
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+}

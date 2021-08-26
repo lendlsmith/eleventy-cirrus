@@ -1,0 +1,27 @@
+{% raw %}---
+title: Our Blog
+subtitle: Such a Simple Blog Layout
+description: Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor.
+layout: ../_includes/layout
+permalink: /blog/
+---
+
+{% include base/title_banner.html %}
+
+<div id="blog" class="row pad">
+  <div class="col-9 offset-center">
+    {% for post in collections.post -%}
+      <div class="card">
+        <h3>{{ post.data.title }}</h3>
+        <h6><small>{{ post.data.date }}</small></h6>
+        <img class="thumbnail" src="{{ post.data.image }}">
+        <p>{{ post.data.intro }}</p>
+        <div class="callout">
+          <ul class="menu simple">
+            <li><a href="{{ post.data.permalink }}" class="button">Read More</a></li>
+          </ul>
+        </div>
+      </div>
+    {% endfor -%}
+  </div>
+</div>{% endraw %}

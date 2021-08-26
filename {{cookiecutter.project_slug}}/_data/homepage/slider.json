@@ -1,0 +1,16 @@
+{
+  "slide": [
+    {
+      "image" : "../assets/img/slider/11ty.png",
+      "title" : "11ty",
+      "caption" : "Eleventy is a simpler static site generator.",
+      "link" : "https://www.11ty.dev/"
+    },
+    {
+      "image" : "../assets/img/slider/sass.png",
+      "title" : "SASS",
+      "caption" : "Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.",
+      "link" : "https://sass-lang.com/"
+    }      
+  ]
+}

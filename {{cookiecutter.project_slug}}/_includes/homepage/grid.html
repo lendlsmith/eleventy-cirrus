@@ -1,0 +1,13 @@
+{% raw %}<div id="grid">
+	<div class="row pad">
+		{% for item in homepage.grid.item -%}
+	  	<div class="col-4">
+	    	<div class="card rounded u-text-center">
+	        <h6>{{ item.title }}</h6>
+	        <p>{{ item.description }}</p>
+	        <a href="{{ item.link }}" class="button" target="_blank">Learn More</a>
+		    </div>
+		  </div>
+		{% endfor -%}
+	</div>
+</div>{% endraw %}

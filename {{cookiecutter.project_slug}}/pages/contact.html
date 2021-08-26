@@ -1,0 +1,32 @@
+{% raw %}---
+title: Contact Us
+subtitle: Interested in finding out more? Get in Contact
+description: Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Duis aliquet egestas purus in.
+layout: ../_includes/layout
+permalink: /contact/
+---
+
+{% include base/title_banner.html %}
+
+<div id="contact" class="row pad">
+  <div class="col-8 offset-center">
+    <div class="card">
+      <div class="row level">
+  		  <div class="col-6">
+  		    <a href="#" target="_blank">
+  		     	<img src="../../assets/img/map.png" alt="Find Us"/>
+  		    </a>
+  		  </div>
+  		  <div class="col-6 contacts" style="padding-left: 10px;">
+  	      <h4><strong>{% for site_name in site.site_name -%}{{ site_name }}{% endfor -%}</strong></h4>
+  	      <p><i class="fas fa-map-marker"></i> {% for address in contact.address -%}{{ address }}{% endfor -%},<br>
+  	         {% for city in contact.city -%}{{ city }}{% endfor -%},<br>
+             {% for country in contact.country -%}{{ country }}{% endfor -%}
+          </p>
+  	      <p><i class="fas fa-phone"></i> <a href="tel:{% for phone in contact.phone -%}{{ phone }}{% endfor -%}">&nbsp;{% for phone in contact.phone -%}{{ phone }}{% endfor -%}</a></p>
+  	      <p><i class="fas fa-envelope"></i> <a href="mailto:{% for email in contact.email -%}{{ email }}{% endfor -%}">&nbsp;{% for email in contact.email -%}{{ email }}{% endfor -%}</a></p>
+  		  </div>
+      </div>
+	  </div>
+	</div>
+</div>{% endraw %}

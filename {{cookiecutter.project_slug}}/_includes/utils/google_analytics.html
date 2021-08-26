@@ -1,0 +1,9 @@
+{% raw %}<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={% for google_analytics_id in site.google_analytics_id -%}{{ google_analytics_id }}{% endfor -%}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{% for google_analytics_id in site.google_analytics_id -%}{{ google_analytics_id }}{% endfor -%}');
+</script>{% endraw %}

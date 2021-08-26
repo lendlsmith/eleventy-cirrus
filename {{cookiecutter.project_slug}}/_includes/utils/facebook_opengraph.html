@@ -1,0 +1,15 @@
+{% raw %}<meta property="og:title" content="{{ title }}"/>
+
+<meta property="og:site_name" content="{% for site_name in site.site_name -%}{{ site_name }}{% endfor -%}"/>
+
+<script>
+  var link = document.createElement('meta');
+  link.setAttribute('property', 'og:url');
+  link.content = "{% for site_url in site.site_url -%}{{ site_url }}{% endfor -%}" + window.location.pathname;
+  document.getElementsByTagName('head')[0].appendChild(link);
+</script>
+
+<meta property="og:type"   content="website" />
+<meta property="og:description" content="{{ description }}"/>
+<meta property="og:image" content="{{ image }}" />
+<meta property="fb:app_id" content="{% for app_id in site.app_id -%}{{ app_id }}{% endfor -%}" />{% endraw %}
