@@ -33,7 +33,7 @@ To get started the following dependencies need to be installed on your machine
 
 **Download our Foundation Static Theme with Git** ::
 
-    $ cookiecutter https://github.com/ilendl2/static-foundation.git
+    $ cookiecutter https://github.com/ilendl2/eleventy-cirrus.git
 
 **The terminal will prompt you to give your project a name. The template will be downloaded into a folder with this name** ::
 
