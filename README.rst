@@ -1,23 +1,22 @@
 ChrisDev Static Eleventy
 ========================
 
-We have built an modern static theme using `Cirrus`_, the most advanced responsive front-end framework in the world.
+We have built an modern static theme using the `Eleventy`_ framework which is a a simpler static site generator and `Cirrus`_, the most advanced responsive front-end framework in the world.
 
-A demo of a default project generated from this project is available at https://static.chrisdev.com
-
-Read the Docs: https://cirrus-ui.netlify.app/getting-started/setup
+A demo of a default project generated from this project is available at https://eleventy.chrisdev.com
 
 Features
 --------
 
-* Built using `Cirrus`_
+* Built using `Cirrus`_ & `Eleventy`_
 * Comes with a number of Custom Pages & Templates such as Blog, Photo Gallery and much more) to kickstart your site
 
 .. _`Cirrus`: https://foundation.zurb.com/sites
+.. _`Eleventy`: https://www.11ty.dev/
 .. _`pip`: https://packaging.python.org/tutorials/installing-packages/
 .. _`npm`: https://www.npmjs.com/
 
-These projects come with a number of useful pages and a prebuilt content structures that will save you a tonne of work.
+This project comes with a number of useful pages and a prebuilt content structures that will save you a tonne of work.
 
 Getting Started
 ---------------
