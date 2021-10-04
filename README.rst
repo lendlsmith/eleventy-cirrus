@@ -32,7 +32,7 @@ To get started the following dependencies need to be installed on your machine
 
 **Download our Foundation Static Theme with Git** ::
 
-    $ cookiecutter https://github.com/ilendl2/eleventy-cirrus.git
+    $ cookiecutter https://github.com/lendlsmith/eleventy-cirrus.git
 
 **The terminal will prompt you to give your project a name. The template will be downloaded into a folder with this name** ::
 
@@ -59,7 +59,7 @@ Creating Repo
     $ git init
     $ git add .
     $ git commit -m "My First Commit"
-    $ git remote add origin git@github.com:ilendl2/my_site.git
+    $ git remote add origin git@github.com:username/my_site.git
     $ git push -u origin master
 
 
