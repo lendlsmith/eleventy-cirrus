@@ -10,7 +10,7 @@ permalink: /blog/blog-post-1/
 ---
 
 # {{ title }}
-###### {{ date }}
+###### {{ date | readableDate }}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu orci vel eros malesuada lacinia ut id purus. Sed ac ex tellus. Vivamus eros urna, lacinia fermentum cursus id, fringilla faucibus urna. Nam eget urna dapibus, accumsan arcu eu, hendrerit sapien. Cras id velit feugiat, aliquam ex et, dictum turpis. Cras at ornare tortor. Praesent non rutrum lectus, non efficitur sapien. Sed at erat pharetra, commodo purus a, maximus justo. Praesent tempor pretium tellus. Quisque ullamcorper non est vitae molestie. Fusce massa elit, placerat non auctor eu, eleifend nec odio. Nulla cursus leo vitae lorem dapibus, a accumsan tortor volutpat. Nulla nunc odio, tristique eu consectetur et, lobortis ac purus. Nullam quis neque nec nisi ultrices iaculis a eu libero. Sed vel laoreet felis.
 

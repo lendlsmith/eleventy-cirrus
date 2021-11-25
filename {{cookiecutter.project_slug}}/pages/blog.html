@@ -13,7 +13,7 @@ permalink: /blog/
     {% for post in collections.post -%}
       <div class="card">
         <h3>{{ post.data.title }}</h3>
-        <h6><small>{{ post.data.date }}</small></h6>
+        <h6><small>{{ post.data.date | readableDate }}</small></h6>
         <img class="thumbnail" src="{{ post.data.image }}">
         <p>{{ post.data.intro }}</p>
         <div class="callout">
