@@ -3,18 +3,26 @@ title: Our Blog
 subtitle: Such a Simple Blog Layout
 description: Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor.
 layout: ../_includes/layout
-permalink: /blog/
+pagination:
+  data: collections.post
+  size: 5
+  reverse: true
+  alias: blog
 ---
 
 {% include base/title_banner.html %}
 
 <div id="blog" class="row pad">
   <div class="col-9 offset-center">
-    {% for post in collections.post -%}
+    {% for post in blog -%}
       <div class="card">
         <h3>{{ post.data.title }}</h3>
         <h6><small>{{ post.data.date | readableDate }}</small></h6>
-        <img class="thumbnail" src="{{ post.data.image }}">
+        {% if post.data.remote_image %}
+					<img class="thumbnail" src="{{ post.data.remote_image }}">
+				{% else %}
+					<img class="thumbnail" src="{% for site_url in site.site_url -%}{{ site_url }}{% endfor -%}/assets/img/newsletter/{{ post.data.image }}">
+				{% endif %}
         <p>{{ post.data.intro }}</p>
         <div class="callout">
           <ul class="menu simple">
@@ -23,5 +31,20 @@ permalink: /blog/
         </div>
       </div>
     {% endfor -%}
+  </div>
+
+  <div class="col-9 offset-center">
+    <div class="pagination">
+      {% if pagination.href.previous %}
+        <div class="pagination-item short"><a href="{{ pagination.href.previous }}">Prev</a></div>
+      {% else %}
+        <div class="pagination-item short disabled"><a href="!#" class="disabled">Prev</a></div>
+      {% endif %}
+      {% if pagination.href.next %}
+        <div class="pagination-item short"><a href="{{ pagination.href.next }}">Next</a></div>
+      {% else %}
+        <div class="pagination-item short disabled"><a href="!#" class="disabled">Next</a></div>
+      {% endif %}
+    </div>
   </div>
 </div>{% endraw %}

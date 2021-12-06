@@ -1,0 +1,29 @@
+{% raw %}<div id="blog" class="pad">
+	<div class="row pad">
+	  <div class="col-9 offset-center u-text-center">
+			<h3>Latest Blog Posts</h3>
+	  </div>
+	</div>
+	<div class="row pad">
+		{% assign latest_posts = collections.post | reverse | slice:0, 3 %}
+		{% for post in latest_posts %}
+			<div class="col-4">
+	      <div class="card">
+					{% if post.data.remote_image %}
+						<img class="thumbnail" src="{{ post.data.remote_image }}">
+					{% else %}
+						<img class="thumbnail" src="{% for site_url in site.site_url -%}{{ site_url }}{% endfor -%}/assets/img/newsletter/{{ post.data.image }}">
+					{% endif %}
+	        <h6>{{ post.data.title }}</h6>
+	        <h6 class="subtitle"><small>{{ post.data.date | readableDate }}</small></h6>
+	        <p>{{ post.data.intro }}</p>
+	        <div class="callout">
+	          <ul class="menu simple">
+	            <li><a href="{{ post.data.permalink }}" class="button">Read More</a></li>
+	          </ul>
+	        </div>
+	      </div>
+	  	</div>
+		{% endfor -%}
+	</div>
+</div>{% endraw %}
