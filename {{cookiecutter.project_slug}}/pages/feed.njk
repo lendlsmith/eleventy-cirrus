@@ -1,0 +1,20 @@
+{% raw %}---
+permalink: '/feed.json'
+---
+
+{
+  "title": "{% for site_name in site.site_name -%}{{ site_name }}{% endfor -%}",
+  "homepage_url": "{% for site_url in site.site_url -%}{{ site_url }}{% endfor -%}",
+  "blog_url": "{% for site_url in site.site_url -%}{{ site_url }}{% endfor -%}/blog",
+  "feed_url": "{% for site_url in site.site_url -%}{{ site_url }}{% endfor -%}/feed.json",
+  "posts": [
+    {% for item in collections.post %}
+      {
+        "title": "{{ item.data.title }}",
+        "date_published": "{{ item.data.date | readableDate }}",
+        "url": "{% for site_url in site.site_url -%}{{ site_url }}{% endfor -%}{{ item.data.permalink }}",
+        "description": "{{ item.data.intro }}"
+      }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}{% endraw %}

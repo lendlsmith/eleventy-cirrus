@@ -1,0 +1,9 @@
+{% raw %}---
+permalink: '/robots.txt'
+---
+
+Sitemap: {% for site_url in site.site_url -%}{{ site_url }}{% endfor -%}/sitemap.xml
+
+User-agent: *
+Disallow:
+{% endraw %}
