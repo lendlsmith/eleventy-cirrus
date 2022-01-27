@@ -9,7 +9,7 @@ Features
 * Built using `Cirrus`_ & `Eleventy`_
 * Comes with a number of Custom Pages & Templates such as Blog, Photo Gallery and much more to kickstart your site
 
-.. _`Cirrus`: https://foundation.zurb.com/sites
+.. _`Cirrus`: https://spiderpig86.github.io/Cirrus/
 .. _`Eleventy`: https://www.11ty.dev/
 .. _`pip`: https://packaging.python.org/tutorials/installing-packages/
 .. _`npm`: https://www.npmjs.com/
