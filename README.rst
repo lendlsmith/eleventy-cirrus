@@ -1,15 +1,13 @@
-ChrisDev Static Eleventy
-========================
+Cirrus * Eleventy Static Site
+=============================
 
-We have built an modern static theme using the `Eleventy`_ framework which is a a simpler static site generator and `Cirrus`_, the most advanced responsive front-end framework in the world.
-
-A demo of a default project generated from this project is available at https://eleventy.chrisdev.com
+We have built an modern static theme using the `Eleventy`_ framework which is a simpler static site generator using `Cirrus`_, the most advanced responsive front-end framework in the world.
 
 Features
 --------
 
 * Built using `Cirrus`_ & `Eleventy`_
-* Comes with a number of Custom Pages & Templates such as Blog, Photo Gallery and much more) to kickstart your site
+* Comes with a number of Custom Pages & Templates such as Blog, Photo Gallery and much more to kickstart your site
 
 .. _`Cirrus`: https://foundation.zurb.com/sites
 .. _`Eleventy`: https://www.11ty.dev/
