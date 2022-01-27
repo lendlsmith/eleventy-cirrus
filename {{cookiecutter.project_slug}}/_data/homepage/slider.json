@@ -7,10 +7,16 @@
       "link" : "https://www.11ty.dev/"
     },
     {
+      "image" : "../assets/img/slider/cirrus.png",
+      "title" : "Cirrus",
+      "caption" : "A component and utility centric SCSS framework.",
+      "link" : "https://cirrus-ui.netlify.app/"
+    },
+    {
       "image" : "../assets/img/slider/sass.png",
       "title" : "SASS",
       "caption" : "Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.",
       "link" : "https://sass-lang.com/"
-    }      
+    }
   ]
 }

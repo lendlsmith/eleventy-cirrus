@@ -1,5 +1,5 @@
 {
-	"name": "airleventy",
+	"name": "cirleventy",
 	"version": "1.0.0",
 	"description": "11ty with minimal tooling extensions. Write with Sass & modern JS.",
 	"private": false,

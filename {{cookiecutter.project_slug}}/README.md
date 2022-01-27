@@ -1,14 +1,13 @@
-# Airleventy
+# Cirleventy
 
 Build static websites with 11ty, Sass for CSS, and modern JavaScript.
 
-Comes with a Netlify deploy config, but can be hosted anywhere.
-
 ## Increase your power levels
 
-1. [Add favicons/device icons](https://www.favicon-generator.org/)
-2. [Add a sitemap](https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap)
-3. [Configure eleventy](https://www.11ty.dev/docs/watch-serve/)
+1. [Front-End Documentation](https://spiderpig86.github.io/Cirrus/)
+1. [Add Favicons / Device Icons](https://realfavicongenerator.net/)
+2. [Add a Sitemap](https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap)
+3. [Configure Eleventy](https://www.11ty.dev/docs/watch-serve/)
 
 ## Setup
 
@@ -37,14 +36,6 @@ $ npm run build-prod
 ```
 
 There are also a slew of individual commands to run individual build processes such as styles, scripts, etc.
-
-## Netlify
-
-First, enable your airleventy fork on Netlify's interface.
-
-When prompted, clear the `build` and `publish` fields (that's what your `netlify.toml` is for). Then set your deploy branch (e.g., `main`).
-
-Now each time you push to your deploy branch you'll also deploy your most recent changes. 🎉
 
 ## JavaScript
 
