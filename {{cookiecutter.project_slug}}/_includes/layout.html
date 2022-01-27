@@ -11,13 +11,8 @@
     {% include utils/google_analytics.html %}
     {% include utils/favicon.html %}
 
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    {% include base/stylesheet.html %}
 
-    <link href="https://cdn.jsdelivr.net/npm/cirrus-ui@0.6.0/dist/cirrus.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css" rel="stylesheet">
-    <link href="/assets/dist/css/app.css" rel="stylesheet" >
   </head>
   <body class="{{ body_class }}">
 
@@ -29,23 +24,7 @@
 
     {% include base/footer.html %}
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
-    <script>
-	    new Splide( '.splide' ).mount();
-    </script>
-    <script>
-      // Show dropdown when clicked
-      $('#header-btn').on('click', function(e) {
-        $('#header-menu').toggleClass('active');
-        $('.nav-btn').toggleClass('active');
-      });
+    {% include base/js.html %}
 
-      // Hide menu after clicking menu item
-      $('.dropdown-menu li').on('click', function(e) {
-         $('#header-menu').removeClass('active');
-         $('.nav-btn').removeClass('active');
-      });
-    </script>
   </body>
 </html>{% endraw %}

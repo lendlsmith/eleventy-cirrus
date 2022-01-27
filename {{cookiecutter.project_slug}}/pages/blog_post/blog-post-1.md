@@ -5,7 +5,7 @@ date: 2021-05-04
 intro: Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor.
 remote_image: 'https://venngage-wordpress.s3.amazonaws.com/uploads/2020/10/Anatomy-of-the-Perfect-Blog-Post.png'
 author: Lendl Smith
-layout: ../_includes/standard.html
+layout: ../_includes/blog.html
 permalink: /blog/blog-post-1/
 ---
 

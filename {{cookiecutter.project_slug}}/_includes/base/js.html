@@ -1,0 +1,18 @@
+{% raw %}<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+<script>
+  new Splide( '.splide' ).mount();
+</script>
+<script>
+  // Show dropdown when clicked
+  $('#header-btn').on('click', function(e) {
+    $('#header-menu').toggleClass('active');
+    $('.nav-btn').toggleClass('active');
+  });
+
+  // Hide menu after clicking menu item
+  $('.dropdown-menu li').on('click', function(e) {
+     $('#header-menu').removeClass('active');
+     $('.nav-btn').removeClass('active');
+  });
+</script>{% endraw %}
