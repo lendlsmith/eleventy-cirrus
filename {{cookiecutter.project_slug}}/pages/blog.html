@@ -13,7 +13,7 @@ pagination:
 {% include base/title_banner.html %}
 
 <div id="blog" class="row pad">
-  <div class="col-7 offset-center">
+  <div class="col-8 offset-2">
     {% for post in blog -%}
       <div class="card">
         <h3>{{ post.data.title }}</h3>
@@ -33,7 +33,7 @@ pagination:
     {% endfor -%}
   </div>
 
-  <div class="col-7 offset-center">
+  <div class="col-8 offset-2">
     <div class="pagination">
       {% if pagination.href.previous %}
         <div class="pagination-item short"><a href="{{ pagination.href.previous }}">Prev</a></div>
