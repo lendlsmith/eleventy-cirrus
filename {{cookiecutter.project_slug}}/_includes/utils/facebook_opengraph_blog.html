@@ -11,16 +11,16 @@
 
 <meta property="og:type"   content="website" />
 
-{% if description %}
-  <meta property="og:description" content="{{ description }}"/>
+{% if intro %}
+  <meta property="og:description" content="{{ intro }}"/>
 {% else  %}
   <meta property="og:description" content="{% for description in site.description -%}{{ description }}{% endfor -%}"/>
 {% endif %}
 
-{% if image %}
-  <meta property="og:image" content="{{ image }}" />
+{% if remote_image %}
+  <meta property="og:image" content="{{ remote_image }}" />
 {% else  %}
-  <meta property="og:image" content="{% for image in site.image -%}{{ image }}{% endfor -%}" />
+  <meta property="og:image" content="{{ image }}" />
 {% endif %}
 
 <meta property="fb:app_id" content="{% for app_id in site.app_id -%}{{ app_id }}{% endfor -%}" />{% endraw %}
