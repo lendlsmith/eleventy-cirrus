@@ -4,6 +4,8 @@
 .header {
   background: $primary;
   a {color: $white;}
+
+  .nav-btn span {background-color: $white;}
 }
 
 body.home {
