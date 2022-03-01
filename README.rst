@@ -3,6 +3,8 @@ Cirrus * Eleventy Static Site
 
 We have built an modern static theme using the `Eleventy`_ framework which is a simpler static site generator using `Cirrus`_, the most advanced responsive front-end framework in the world.
 
+Click to check out our `demo`_
+
 Features
 --------
 
@@ -13,6 +15,7 @@ Features
 .. _`Eleventy`: https://www.11ty.dev/
 .. _`pip`: https://packaging.python.org/tutorials/installing-packages/
 .. _`npm`: https://www.npmjs.com/
+.. _`demo`: https://static-web.chrisdev.com/
 
 This project comes with a number of useful pages and a prebuilt content structures that will save you a tonne of work.
 
