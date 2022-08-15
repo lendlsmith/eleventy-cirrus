@@ -1,6 +1,5 @@
 {
     "site_name": ["{{cookiecutter.project_name}}"],
-    "site_url": ["https://{{cookiecutter.host_name}}"],
     "logo": ["../assets/img/logo.png"],
     "description": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales, ipsum nec cursus mattis, nibh leo congue leo, sit amet."],
     "image": ["http://teambuildalliance.co.za/wp-content/uploads/2016/03/1.jpg"],

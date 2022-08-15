@@ -18,22 +18,22 @@
 </div>
 
 <script>
-	document.querySelector('.rounded-social-buttons a.social-button.facebook').href = "https://www.facebook.com/sharer.php?u={% for site_url in site.site_url -%}{{ site_url }}{% endfor -%}" + window.location.pathname;
+	document.querySelector('.rounded-social-buttons a.social-button.facebook').href = "https://www.facebook.com/sharer.php?u={{ site.site_url }}" + window.location.pathname;
 </script>
 
 <script>
-	document.querySelector('.rounded-social-buttons a.social-button.twitter').href = "https://twitter.com/share?url={% for site_url in site.site_url -%}{{ site_url }}{% endfor -%}" + window.location.pathname;
+	document.querySelector('.rounded-social-buttons a.social-button.twitter').href = "https://twitter.com/share?url={{ site.site_url }}" + window.location.pathname;
 </script>
 
 <script>
-	document.querySelector('.rounded-social-buttons a.social-button.whatsapp').href = "whatsapp://send?text={% for site_url in site.site_url -%}{{ site_url }}{% endfor -%}" + window.location.pathname;
+	document.querySelector('.rounded-social-buttons a.social-button.whatsapp').href = "whatsapp://send?text={{ site.site_url }}" + window.location.pathname;
 </script>
 
 <script>
-	document.querySelector('.rounded-social-buttons a.social-button.linkedin').href = "http://www.linkedin.com/shareArticle?mini=true&amp;url={% for site_url in site.site_url -%}{{ site_url }}{% endfor -%}" + window.location.pathname;
+	document.querySelector('.rounded-social-buttons a.social-button.linkedin').href = "http://www.linkedin.com/shareArticle?mini=true&amp;url={{ site.site_url }}" + window.location.pathname;
 </script>
 
 <script>
-	document.querySelector('.rounded-social-buttons a.social-button.mail').href = "mailto:?subject={{ title }}&body={% for site_url in site.site_url -%}{{ site_url }}{% endfor -%}" + window.location.pathname;
+	document.querySelector('.rounded-social-buttons a.social-button.mail').href = "mailto:?subject={{ title }}&body={{ site.site_url }}" + window.location.pathname;
 </script>
 {% endraw %}

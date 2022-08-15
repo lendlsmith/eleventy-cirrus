@@ -48,7 +48,7 @@ To get started the following dependencies need to be installed on your machine
 
 **Finally build your project** ::
 
-    $ npm run watch
+    $ ELEVENTY_ENV=development npm run watch
 
 You can access your site at ``http://localhost:8080``.
 

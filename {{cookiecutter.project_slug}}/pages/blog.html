@@ -21,7 +21,7 @@ pagination:
         {% if post.data.remote_image %}
 					<img class="thumbnail" src="{{ post.data.remote_image }}">
 				{% else %}
-					<img class="thumbnail" src="{% for site_url in site.site_url -%}{{ site_url }}{% endfor -%}/assets/img/newsletter/{{ post.data.image }}">
+					<img class="thumbnail" src="{{ site.site_url }}/assets/img/blog/{{ post.data.image }}">
 				{% endif %}
         <p>{{ post.data.intro }}</p>
         <div class="callout">
