@@ -3,9 +3,12 @@
 
 .header {
   background: $primary;
-  a {color: $white;}
+  a, a:hover {color: $white;}
+  .dropdown-menu {
+    li a {color: $primary;}
+  }
 
-  .nav-btn span {background-color: $white;}
+  .nav-btn span {background-color: $white}
 }
 
 body.home {

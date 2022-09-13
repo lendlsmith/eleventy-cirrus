@@ -20,7 +20,7 @@ $ npm i
 ### Develop
 
 ```sh
-$ npm run watch
+$ ELEVENTY_ENV=development npm run watch
 ```
 
 ### Build

@@ -16,12 +16,20 @@
       <div class="nav-left u-text-center">
         <div class="nav-item u-text-center"><a href="https://github.com/lendlsmith/eleventy-cirrus"><span class="icon"><i class="fab fa-wrapper fa-github"></i></span></a></div>
       </div>
+      {% assign navPages = collections.all | eleventyNavigation %}
       <div class="nav-right">
-        <div class="nav-item"><a href="/"><span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span> Home</a></div>
-        <div class="nav-item u-text-center nav-menu"><a href="/about/">About Us</a></div>
-        <div class="nav-item u-text-center nav-menu"><a href="/services/">Our Services</a></div>
-        <div class="nav-item u-text-center nav-menu"><a href="/pages/blog/">Our Blog</a></div>
-        <div class="nav-item u-text-center nav-menu"><a href="/contact/">Contact Us</a></div>
+        {%- for entry in navPages %}
+          <div{%- for child in entry.children %} id="dropdown" class="nav-item has-sub toggle-hover" {% else %} class="nav-item"{%- endfor %}>
+            <a href="{{ entry.url }}" class="nav-dropdown-link">{{ entry.title }}</a>
+            {%- if entry.children -%}
+              <ul class="dropdown-menu dropdown-animated" role="menu">
+                {%- for child in entry.children %}
+                  <li role="menu-item"><a href="{{ child.url }}">{{ child.title }}</a></li>
+                {% endfor -%}
+              </ul>
+            {%- endif %}
+          </div>
+        {%- endfor %}
       </div>
     </div>
 </div>{% endraw %}

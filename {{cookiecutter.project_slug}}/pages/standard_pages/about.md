@@ -3,6 +3,10 @@ title: About Us
 subtitle: Hear About Who We Are
 description: Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor.
 layout: ../_includes/standard.html
+eleventyNavigation:
+  key: about
+  order: 2
+  title: About Us
 permalink: /about/
 ---
 

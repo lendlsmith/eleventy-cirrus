@@ -6,6 +6,11 @@ intro: Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus
 remote_image: 'https://venngage-wordpress.s3.amazonaws.com/uploads/2020/10/Anatomy-of-the-Perfect-Blog-Post.png'
 author: Lendl Smith
 layout: ../_includes/blog.html
+eleventyNavigation:
+  key: post1
+  order: 1
+  parent: blog
+  title: My First Post
 permalink: /blog/blog-post-1/
 ---
 

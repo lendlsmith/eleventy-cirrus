@@ -1,4 +1,5 @@
 const pluginDate = require("eleventy-plugin-date");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addWatchTarget("./assets/sass")
@@ -10,6 +11,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("./assets/img")
 
 	eleventyConfig.addPlugin(pluginDate);
+	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
 	return {
 		passthroughFileCopy: true,
