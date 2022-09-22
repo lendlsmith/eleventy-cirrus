@@ -10,7 +10,7 @@ eleventyNavigation:
   key: post2
   order: 2
   parent: blog
-  title: My First Post
+  title: My Second Post
 permalink: /blog/blog-post-2/
 ---
 
