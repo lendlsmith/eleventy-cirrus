@@ -7,8 +7,8 @@ remote_image: 'https://venngage-wordpress.s3.amazonaws.com/uploads/2020/10/Anato
 author: Lendl Smith
 layout: ../_includes/blog.html
 eleventyNavigation:
-  key: post1
-  order: 1
+  key: post2
+  order: 2
   parent: blog
   title: My First Post
 permalink: /blog/blog-post-2/
