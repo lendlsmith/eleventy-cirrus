@@ -21,13 +21,13 @@
         {%- for entry in navPages %}
           <div{%- for child in entry.children %} id="dropdown" class="nav-item has-sub toggle-hover" {% else %} class="nav-item"{%- endfor %}>
             <a href="{{ entry.url }}" class="nav-dropdown-link">{{ entry.title }}</a>
-            {%- if entry.children -%}
+            {%- for child in entry.children %}
               <ul class="dropdown-menu dropdown-animated" role="menu">
                 {%- for child in entry.children %}
                   <li role="menu-item"><a href="{{ child.url }}">{{ child.title }}</a></li>
                 {% endfor -%}
               </ul>
-            {%- endif %}
+            {%- endfor %}
           </div>
         {%- endfor %}
       </div>

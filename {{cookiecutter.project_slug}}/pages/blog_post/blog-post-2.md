@@ -1,7 +1,7 @@
 {% raw %}---
 tags: post
-title: My First Blog Post
-date: 2022-05-04
+title: My Second Blog Post
+date: 2022-05-05
 intro: Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor.
 remote_image: 'https://venngage-wordpress.s3.amazonaws.com/uploads/2020/10/Anatomy-of-the-Perfect-Blog-Post.png'
 author: Lendl Smith
@@ -11,7 +11,7 @@ eleventyNavigation:
   order: 1
   parent: blog
   title: My First Post
-permalink: /blog/blog-post-1/
+permalink: /blog/blog-post-2/
 ---
 
 # {{ title }}
