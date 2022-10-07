@@ -1,0 +1,24 @@
+{% raw %}---
+title: Search
+description: A static template powered by Cirrus front-end framework and Eleventy's static site generator.
+layout: layout
+permalink: /search/
+---
+
+<br>
+
+{% include base/title_banner.html %}
+
+<div id="content">
+  <div class="row">
+    <div class="col-4 offset-center">
+      <input autocomplete="off" type="search" id="search" placeholder="Search our site!"/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8 offset-center">
+      <div id="results">
+      </div>
+    </div>
+  </div>
+</div>{% endraw %}

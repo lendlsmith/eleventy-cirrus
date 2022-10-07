@@ -38,3 +38,24 @@ body {
 
 .pad {padding: 30px 10px;}
 .card {padding: 20px;}
+
+.modal {
+  min-height: 100vh;
+  z-index: 9999;
+
+  &.modal-large .modal-content {
+    min-width: 50vw;
+    .card {padding: 20px;}
+    h4 {font-size: 20px; font-weight: 500; margin-bottom: 8px;}
+    h4.no-result {color: $primary;}
+    p {font-size: 13px; margin-top: 5px;}
+  }
+
+  .modal-content .modal-body {
+    max-height: 80vh;
+  }
+
+  &.shown .modal-overlay, &:target .modal-overlay {
+    background-color: rgba($black,.85);
+  }
+}
